@@ -1,0 +1,76 @@
+body {
+    overflow-x: hidden; /* 禁止左右滾動 */
+    background-color: #5a5353; /* 參考你 wireframe 的背景色 */
+    color: white;
+    font-family: "Noto Sans TC", sans-serif;
+  }
+  
+  .main-title {
+    font-size: 4rem;
+    margin-top: 100px;
+    color: white;
+  }
+  
+  .sub-text {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin: 50px 0;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .main-title {
+      font-size: 2.5rem;
+    }
+  
+    .sub-text {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  .main-title-left {
+    font-size: 5rem; /* 標題字型大小 */
+    display: inline-block;
+    transform: translateX(-20px); /* 錯開的效果，可以調整這個值 */
+  }
+  
+  .main-title-right {
+    font-size: 5rem; /* 標題字型大小 */
+    display: inline-block;
+    transform: translateX(20px); /* 錯開的效果，可以調整這個值 */
+  }
+  
+  .hero-text .display-4 {
+    margin-top: 100px; /* 調整標題的高度，讓它顯示在圖片的中間 */
+  }
+  
+  @media (max-width: 768px) {
+    .main-title-left, .main-title-right {
+      font-size: 3rem; /* 小螢幕時字體縮小 */
+      transform: translateX(0); /* 手機版時，讓文字對齊 */
+    }
+  }
+  
+  .hero-image {
+    position: relative;
+  }
+  
+  .sub-text {
+    color: white; /* 文字顏色 */
+    font-size: 1rem;
+    background: transparent; /* 背景透明 */
+  }
+  
+  
+  @media (max-width: 768px) {
+    .sub-text {
+      font-size: 1rem; /* 手機版時字體縮小 */
+    }
+  }
+  
+
+  
